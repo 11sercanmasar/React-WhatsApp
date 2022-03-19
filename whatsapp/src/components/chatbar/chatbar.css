@@ -1,4 +1,105 @@
 .chatbar{
-    flex:2;
-    flex-direction: column;
+    flex:2; 
+    display: flex;
+    flex-direction:column;
 }
+
+.chatbarHeader{
+    padding: 6px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+
+}
+
+.chatbarHeaderInfo{
+    flex: 1;
+    line-height: 0.5;
+    padding-left: 20px; 
+
+}
+.chatbarHeaderInfo > h3{
+    font-weight:500;
+}
+.chatbarHeaderInfo > p{
+   color:gray;
+}
+.chatbarHeaderIcons > *{
+    margin:5px;
+    padding: 5px;
+}
+.chatbarHeaderIcons > *:hover{
+ background-color: #dbd2d2;
+ border-radius:50%;
+}
+
+.chatbarBody{
+    flex:1;
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-position: center;
+    padding: 30px;
+    overflow-y: auto;
+}
+
+.chatbarMessage{
+    position:relative;
+    font-size: 16px;
+    padding: 10px;
+    background-color:#ffffff;
+    border-radius:10px;
+    max-width: fit-content;
+    margin-bottom: 30px;
+
+}
+
+.chatbarReceiver{
+    margin-left: auto;
+    background-color: #dcf8c6;
+}
+
+.chatbarMessageName{
+    position: absolute;
+    top:-15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+
+.chatbarMessageTimeStamp{
+
+    margin-left: 10px;
+    font-size:xx-small;
+    font-weight: 600;
+}
+
+.chatbarFooter{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+    padding: 0 20px;
+}
+
+.chatbarFooterForm{
+    display: flex;
+    flex:1;
+  
+}
+.chatbarFooterInput{
+    flex:1;
+    border-radius: 30px;
+    padding:10px;
+    border:none;
+    margin: 0 30px;
+}
+.chatbarFooterButton{
+    display:none;
+}
+
+.chatbarFooter:nth-child(1),
+.chatbarFooter:nth-child(3){
+    color: rgb(141, 138, 138);
+}
+
+
+
