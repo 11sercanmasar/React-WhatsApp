@@ -17,6 +17,7 @@ export default function Chatbar() {
   const sendMessage = (e)=>{
     e.preventDefault();
     console.log(input)
+    setInput("")
   } 
 
   return (
