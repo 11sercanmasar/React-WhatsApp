@@ -1,0 +1,46 @@
+.login{
+  background-color: #f8f8f8; 
+  height: 100vh;
+  width: 100vw;
+ 
+}
+
+.loginWrapper{
+  background-color:white;
+  border-radius: 10px;
+  box-shadow: 0 0 13px -5px rgba(0, 0, 0, 0.75) ;
+  position:relative;
+  transform :translate(-50%, -50%);
+  left:50%;
+  top:50%; 
+   width: max-content;
+
+
+  
+}
+
+.loginWrapper *{
+  position:inherit;
+  transform :translate(-50%, -50%);
+  left:50%;
+  top:40%; 
+  width:max-content;
+  height: max-content;
+  line-height: 1;
+  font-family: inherit;
+}
+
+.loginImg{
+    width: 15vh;
+    height:15vh;
+    margin: 0;
+
+}
+.loginButton{
+  text-align: center !important;  
+  padding: 20px !important;
+  color: #ffffff !important;
+  text-shadow:0px 0px 1rem white !important;
+  background-color: #2fba44 !important;
+  padding-top:30px!important;
+}

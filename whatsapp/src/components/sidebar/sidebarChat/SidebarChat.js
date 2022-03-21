@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from 'react'
 import './sidebarChat.css'
 import { Avatar } from "@material-ui/core"
+import db from '../../../firebase';
 
 export default function SidebarChat({id ,name, addNewChat }) {
     const [seed, setSeed]= useState("");
-    
+
     useEffect(()=>{
        setSeed((Math.floor(Math.random()*5000)));
     }, [])
@@ -14,6 +15,9 @@ export default function SidebarChat({id ,name, addNewChat }) {
 
         if(roomName){
             //do some clever database stuff
+            db.collection('rooms').add({
+               name : roomName,              
+            })
         }
     };
 
